@@ -8,8 +8,8 @@
 
 import Foundation
 
-class NetworkManager
-{
+class NetworkManager {
+    
     // MARK: - Singleton
     static let sharedInstance = NetworkManager()
     

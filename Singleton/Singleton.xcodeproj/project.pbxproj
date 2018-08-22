@@ -49,6 +49,8 @@
 		5C8724B8211B458F00B4F27D = {
 			isa = PBXGroup;
 			children = (
+				5CA0DAFB212D51A0000D3A05 /* README.md */,
+				5CA0DAFA212D5174000D3A05 /* README_vi.md */,
 				5C8724C3211B458F00B4F27D /* Singleton */,
 				5C8724C2211B458F00B4F27D /* Products */,
 			);
@@ -65,8 +67,6 @@
 		5C8724C3211B458F00B4F27D /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
-				5CA0DAFB212D51A0000D3A05 /* README.md */,
-				5CA0DAFA212D5174000D3A05 /* README_vi.md */,
 				5C8724E5211B4F5900B4F27D /* Swift */,
 				5C8724E4211B4F4E00B4F27D /* Objective C */,
 				5C8724D9211B45EC00B4F27D /* Supporting Files */,
@@ -90,10 +90,10 @@
 		5C8724E4211B4F4E00B4F27D /* Objective C */ = {
 			isa = PBXGroup;
 			children = (
-				5C8724E1211B4DA400B4F27D /* ViewController.h */,
-				5C8724E2211B4DA400B4F27D /* ViewController.m */,
 				5C8724DC211B4C5800B4F27D /* NetworkManager.h */,
 				5C8724DD211B4C5800B4F27D /* NetworkManager.m */,
+				5C8724E1211B4DA400B4F27D /* ViewController.h */,
+				5C8724E2211B4DA400B4F27D /* ViewController.m */,
 			);
 			name = "Objective C";
 			sourceTree = "<group>";
@@ -101,8 +101,8 @@
 		5C8724E5211B4F5900B4F27D /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				5C8724DF211B4D6800B4F27D /* ViewController.swift */,
 				5C8724D6211B45BF00B4F27D /* NetworkManager.swift */,
+				5C8724DF211B4D6800B4F27D /* ViewController.swift */,
 			);
 			name = Swift;
 			sourceTree = "<group>";

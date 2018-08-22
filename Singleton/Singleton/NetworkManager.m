@@ -12,8 +12,7 @@
 
 #pragma mark - Singleton
 
-+ (instancetype)sharedInstance
-{
++ (instancetype)sharedInstance {
     static NetworkManager *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -25,8 +24,7 @@
 
 #pragma mark - Initialization
 
-- (id)init
-{
+- (id)init {
     self = [super init];
     if (self) {
         self.baseURL = [NSURL URLWithString:@""];
