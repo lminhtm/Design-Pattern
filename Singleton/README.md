@@ -1,23 +1,23 @@
 #  Singleton
 ***
 
-##  Definition
-Ensure a class has only one instance and provide a global point of access to it.
+##  Khái niệm
+Singleton Pattern là một mẫu thiết kế được sử dụng để bảo đảm rằng mỗi một lớp (class) chỉ có được một thể hiện (instance) duy nhất và mọi tương tác đều thông qua thể hiện này.
 
-Frequency of use: Medium high
+Tần suất sử dụng: Trung bình cao
 ***
 
 ## UML class diagram
 ![alt text](https://www.dofactory.com/images/diagrams/net/singleton.gif "Text 1")
 ***
 
-## Participants
-- Static member : This contains the instance of the singleton class.
-- Private constructor : This will prevent anybody else to instantiate the Singleton class.
-- Static public method : This provides the global point of access to the Singleton object and returns the instance to the client calling class.
+## Cấu trúc
+- Static member : Thuộc tính static để tham chiếu đến một thể hiện của lớp Singleton.
+- Private constructor : Phương thức khởi tạo private.
+- Static public method : Phương thức static trả về thuộc tính static.
 ***
 
-## Example:
+## Ví dụ
 ```Swift
 // Shared URL Session
 let sharedURLSession = URLSession.shared
@@ -31,4 +31,5 @@ let standardUserDefaults = UserDefaults.standard
 // Default Payment Queue
 let defaultPaymentQueue = SKPaymentQueue.default()
 ```
+
 
