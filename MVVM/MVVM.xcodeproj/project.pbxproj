@@ -13,6 +13,9 @@
 		5C354EB0221BAA5E006665F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C354EAF221BAA5E006665F5 /* Assets.xcassets */; };
 		5C354EB3221BAA5E006665F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C354EB1221BAA5E006665F5 /* LaunchScreen.storyboard */; };
 		5C354EBE221BAAD3006665F5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5C354EBD221BAACA006665F5 /* README.md */; };
+		5CF2B7E0229FBB8C00DFA8FE /* Messier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2B7DF229FBB8C00DFA8FE /* Messier.swift */; };
+		5CF2B7E3229FC0B200DFA8FE /* MessierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2B7E2229FC0B200DFA8FE /* MessierViewModel.swift */; };
+		5CF2B7E5229FC1D600DFA8FE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2B7E4229FC1D600DFA8FE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5C354EB2221BAA5E006665F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C354EB4221BAA5E006665F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C354EBD221BAACA006665F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5CF2B7DF229FBB8C00DFA8FE /* Messier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messier.swift; sourceTree = "<group>"; };
+		5CF2B7E2229FC0B200DFA8FE /* MessierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessierViewModel.swift; sourceTree = "<group>"; };
+		5CF2B7E4229FC1D600DFA8FE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,12 @@
 		5C354EA7221BAA5D006665F5 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				5C354EBB221BAA87006665F5 /* Swift */,
-				5C354EBC221BAA91006665F5 /* Objective-C */,
+				5CF2B7DB229FBA3600DFA8FE /* Model */,
+				5CF2B7DC229FBA3E00DFA8FE /* View */,
+				5CF2B7E1229FC09800DFA8FE /* View Model */,
+				5C354EBB221BAA87006665F5 /* Controller */,
 				5C354EBA221BAA6A006665F5 /* Supporting Files */,
+				5C354EAF221BAA5E006665F5 /* Assets.xcassets */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -68,27 +77,43 @@
 			isa = PBXGroup;
 			children = (
 				5C354EA8221BAA5D006665F5 /* AppDelegate.swift */,
-				5C354EAC221BAA5D006665F5 /* Main.storyboard */,
-				5C354EAF221BAA5E006665F5 /* Assets.xcassets */,
-				5C354EB1221BAA5E006665F5 /* LaunchScreen.storyboard */,
 				5C354EB4221BAA5E006665F5 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5C354EBB221BAA87006665F5 /* Swift */ = {
+		5C354EBB221BAA87006665F5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				5C354EAA221BAA5D006665F5 /* ViewController.swift */,
+				5CF2B7E4229FC1D600DFA8FE /* DetailViewController.swift */,
 			);
-			name = Swift;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		5C354EBC221BAA91006665F5 /* Objective-C */ = {
+		5CF2B7DB229FBA3600DFA8FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5CF2B7DF229FBB8C00DFA8FE /* Messier.swift */,
 			);
-			name = "Objective-C";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CF2B7DC229FBA3E00DFA8FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C354EAC221BAA5D006665F5 /* Main.storyboard */,
+				5C354EB1221BAA5E006665F5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CF2B7E1229FC09800DFA8FE /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CF2B7E2229FC0B200DFA8FE /* MessierViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +148,7 @@
 				TargetAttributes = {
 					5C354EA4221BAA5D006665F5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -163,7 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF2B7E0229FBB8C00DFA8FE /* Messier.swift in Sources */,
 				5C354EAB221BAA5D006665F5 /* ViewController.swift in Sources */,
+				5CF2B7E5229FC1D600DFA8FE /* DetailViewController.swift in Sources */,
+				5CF2B7E3229FC0B200DFA8FE /* MessierViewModel.swift in Sources */,
 				5C354EA9221BAA5D006665F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,14 +341,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HXC4UA9AV;
-				INFOPLIST_FILE = MVVM/Info.plist;
+				INFOPLIST_FILE = "MVVM/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lminhtm.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -330,14 +359,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HXC4UA9AV;
-				INFOPLIST_FILE = MVVM/Info.plist;
+				INFOPLIST_FILE = "MVVM/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lminhtm.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
