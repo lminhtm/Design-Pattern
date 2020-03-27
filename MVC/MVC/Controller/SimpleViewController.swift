@@ -14,18 +14,16 @@ class SimpleViewController: UIViewController {
     @IBOutlet weak var numberLabel: UILabel!
     
     /// Model reference here
-    var model: SimpleModel!
+    var model: SimpleModel = SimpleModel()
     
-    /// And controller go down here
+    /// Controller go down here
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        model = SimpleModel()
         updateUI()
     }
     
     func updateUI() {
-        numberLabel.text = "\(model.value)"
+        numberLabel.text = String(describing: model.value)
     }
     
     @IBAction func randomButtonTapped(_ sender: Any) {
