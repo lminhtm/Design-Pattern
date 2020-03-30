@@ -19,16 +19,16 @@ class DataBinding<T> {
         }
     }
     
-    init(value: T) {
+    init(_ value: T) {
         self.value = value
     }
     
-    func bind(handler: @escaping Handler) {
+    func bind(_ handler: @escaping Handler) {
         handlers.append(handler)
     }
     
-    func bindAndFire(handler: @escaping Handler) {
-        bind(handler: handler)
+    func bindAndFire(_ handler: @escaping Handler) {
+        bind(handler)
         fire()
     }
     

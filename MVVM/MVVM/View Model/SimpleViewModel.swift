@@ -13,25 +13,20 @@ class SimpleViewModel {
     /// Model reference here
     private var model: SimpleModel?
     
-    /// Don't have reference to view, only have data binding
-    var setNumberText: DataBinding<String>?
+    /// Don't have reference to view
+    let numberText: DataBinding<String>
     
-    /// Init presenter with model
+    /// Init view model
     init(model: SimpleModel) {
         self.model = model
-        self.setNumberText = DataBinding(value: String(describing: model.value))
+        self.numberText = DataBinding(String(describing: model.value))
     }
     
     /// Business logic
     func makeRandom() {
-        model?.makeRandom()
-        updateDataBinding()
-    }
-    
-    /// Update view
-    private func updateDataBinding() {
-        guard let model = model else { return }
+        guard var model = model else { return }
         
-        setNumberText?.value = String(describing: model.value)
+        model.makeRandom()
+        numberText.value = String(describing: model.value)
     }
 }

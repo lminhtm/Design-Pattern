@@ -10,7 +10,7 @@
         <!--Simple View Controller-->
         <scene sceneID="JNZ-Gk-UBS">
             <objects>
-                <viewController id="8tr-Rn-sck" customClass="SimpleViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8tr-Rn-sck" customClass="SimpleViewController" customModule="MVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0z6-9p-Ewq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="numberLabel" destination="QCI-fo-ecn" id="c8s-24-9oJ"/>
+                        <outlet property="randomButton" destination="WHZ-ec-VJN" id="i5c-Rw-viY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1k-Jo-kiD" sceneMemberID="firstResponder"/>

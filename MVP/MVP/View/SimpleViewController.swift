@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Protocol of abtract view
+/// Protocol of abstract view
 protocol SimpleView: class {
     func setNumberText(text: String)
 }
@@ -28,7 +28,7 @@ class SimpleViewController: UIViewController, SimpleView {
         presenter.attachView(view: self)
     }
 
-    /// Implement methods from abtract view Protocol
+    /// Implement methods from abstract view Protocol
     func setNumberText(text: String) {
         numberLabel.text = text
     }

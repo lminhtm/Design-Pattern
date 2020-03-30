@@ -86,8 +86,8 @@
 				5C52F011242CB1900011AEBA /* AppDelegate.swift */,
 				5C52F013242CB1900011AEBA /* SceneDelegate.swift */,
 				5C52F034242CB28B0011AEBA /* Model */,
-				5C52F037242CB5130011AEBA /* Controller */,
 				5C52F039242CBD6C0011AEBA /* View */,
+				5C52F037242CB5130011AEBA /* Controller */,
 				5C52F03C242CBE4A0011AEBA /* Supporting Files */,
 			);
 			path = MVC;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SimpleViewController.swift
 //  MVVM
 //
 //  Created by LMinh on 3/27/20.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SimpleViewController: UIViewController {
 
     /// View reference here
     @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var randomButton: UIButton!
     
     /// View model reference here
     let viewModel = SimpleViewModel(model: SimpleModel())
@@ -19,11 +20,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateUI()
+    }
+    
+    func updateUI() {
         // View model bind here
-        viewModel.setNumberText?.bindAndFire(handler: { [weak self] (text) in
+        viewModel.numberText.bindAndFire { [weak self] (text) in
             guard let self = self else { return }
             self.numberLabel.text = text
-        })
+        }
     }
 
     @IBAction func randomButtonTapped(_ sender: Any) {

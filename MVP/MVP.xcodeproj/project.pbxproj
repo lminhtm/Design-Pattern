@@ -88,8 +88,8 @@
 				5C52F049242CC2B50011AEBA /* AppDelegate.swift */,
 				5C52F04B242CC2B50011AEBA /* SceneDelegate.swift */,
 				5C52F06C242CC2DE0011AEBA /* Model */,
-				5C52F06D242CC2E90011AEBA /* Presenter */,
 				5C52F06E242CC3020011AEBA /* View */,
+				5C52F06D242CC2E90011AEBA /* Presenter */,
 				5C52F06B242CC2C30011AEBA /* Supporting Files */,
 			);
 			path = MVP;

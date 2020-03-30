@@ -19,6 +19,7 @@ class SimpleViewController: UIViewController {
     /// Controller go down here
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateUI()
     }
     
