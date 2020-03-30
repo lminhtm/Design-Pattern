@@ -71,47 +71,47 @@
 		5C2FFE41211C256700A9F70E /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				5C529B78211C262B00679F27 /* Swift */,
-				5C529BA8211C3B3000679F27 /* Objective-C */,
-				5C2FFE55211C259600A9F70E /* Supporting Files */,
+				5C2FFE42211C256700A9F70E /* AppDelegate.swift */,
+				5CC3FB2A24318F8B001FC2E9 /* Swift */,
+				5CC3FB2B24318F9F001FC2E9 /* Objective-C */,
+				5CC3FB2C24318FCE001FC2E9 /* Supporting Files */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		5C2FFE55211C259600A9F70E /* Supporting Files */ = {
+		5CC3FB2A24318F8B001FC2E9 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5C2FFE44211C256700A9F70E /* ViewController.swift */,
+				5C529BA6211C335900679F27 /* MonsterFactory.swift */,
+				5C529BA4211C300500679F27 /* Monster.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		5CC3FB2B24318F9F001FC2E9 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				5C7A11F6211C3B9900F63742 /* ViewController.h */,
+				5C7A11F7211C3B9900F63742 /* ViewController.m */,
+				5C7A11FC211C3C8B00F63742 /* MonsterFactory.h */,
+				5C7A11FD211C3C8B00F63742 /* MonsterFactory.m */,
+				5C7A11F9211C3BBF00F63742 /* Monster.h */,
+				5C7A11FA211C3BBF00F63742 /* Monster.m */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		5CC3FB2C24318FCE001FC2E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				5C7A11F5211C3B9800F63742 /* Factory-Bridging-Header.h */,
-				5C2FFE42211C256700A9F70E /* AppDelegate.swift */,
 				5C2FFE46211C256700A9F70E /* Main.storyboard */,
 				5C2FFE49211C256800A9F70E /* Assets.xcassets */,
 				5C2FFE4B211C256800A9F70E /* LaunchScreen.storyboard */,
 				5C2FFE4E211C256800A9F70E /* Info.plist */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5C529B78211C262B00679F27 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				5C529BA4211C300500679F27 /* Monster.swift */,
-				5C529BA6211C335900679F27 /* MonsterFactory.swift */,
-				5C2FFE44211C256700A9F70E /* ViewController.swift */,
-			);
-			name = Swift;
-			sourceTree = "<group>";
-		};
-		5C529BA8211C3B3000679F27 /* Objective-C */ = {
-			isa = PBXGroup;
-			children = (
-				5C7A11F9211C3BBF00F63742 /* Monster.h */,
-				5C7A11FA211C3BBF00F63742 /* Monster.m */,
-				5C7A11FC211C3C8B00F63742 /* MonsterFactory.h */,
-				5C7A11FD211C3C8B00F63742 /* MonsterFactory.m */,
-				5C7A11F6211C3B9900F63742 /* ViewController.h */,
-				5C7A11F7211C3B9900F63742 /* ViewController.m */,
-			);
-			name = "Objective-C";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +146,7 @@
 				TargetAttributes = {
 					5C2FFE3E211C256700A9F70E = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -342,16 +342,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HXC4UA9AV;
-				INFOPLIST_FILE = Factory/Info.plist;
+				INFOPLIST_FILE = "Factory/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lminhtm.Factory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Factory/Factory-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Factory/Supporting Files/Factory-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -363,15 +363,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HXC4UA9AV;
-				INFOPLIST_FILE = Factory/Info.plist;
+				INFOPLIST_FILE = "Factory/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lminhtm.Factory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Factory/Factory-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Factory/Supporting Files/Factory-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

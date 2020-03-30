@@ -90,7 +90,7 @@
 				5C52F06C242CC2DE0011AEBA /* Model */,
 				5C52F06E242CC3020011AEBA /* View */,
 				5C52F06D242CC2E90011AEBA /* Presenter */,
-				5C52F06B242CC2C30011AEBA /* Supporting Files */,
+				5CC3FB2924318F3E001FC2E9 /* Supporting Files */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -102,16 +102,6 @@
 				5C52F062242CC2B60011AEBA /* Info.plist */,
 			);
 			path = MVPTests;
-			sourceTree = "<group>";
-		};
-		5C52F06B242CC2C30011AEBA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C52F052242CC2B60011AEBA /* Assets.xcassets */,
-				5C52F054242CC2B60011AEBA /* LaunchScreen.storyboard */,
-				5C52F057242CC2B60011AEBA /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5C52F06C242CC2DE0011AEBA /* Model */ = {
@@ -137,6 +127,16 @@
 				5C52F04F242CC2B50011AEBA /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5CC3FB2924318F3E001FC2E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C52F052242CC2B60011AEBA /* Assets.xcassets */,
+				5C52F054242CC2B60011AEBA /* LaunchScreen.storyboard */,
+				5C52F057242CC2B60011AEBA /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,7 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HXC4UA9AV;
-				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_FILE = "MVP/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HXC4UA9AV;
-				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_FILE = "MVP/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

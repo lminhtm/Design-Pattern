@@ -65,44 +65,44 @@
 		5C8724C3211B458F00B4F27D /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
-				5C8724E5211B4F5900B4F27D /* Swift */,
-				5C8724E4211B4F4E00B4F27D /* Objective-C */,
-				5C8724D9211B45EC00B4F27D /* Supporting Files */,
+				5C8724C4211B458F00B4F27D /* AppDelegate.swift */,
+				5CC3FB2D2431903C001FC2E9 /* Swift */,
+				5CC3FB2E2431904C001FC2E9 /* Objective-C */,
+				5CC3FB2F24319067001FC2E9 /* Supporting Files */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
 		};
-		5C8724D9211B45EC00B4F27D /* Supporting Files */ = {
+		5CC3FB2D2431903C001FC2E9 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				5C8724C4211B458F00B4F27D /* AppDelegate.swift */,
+				5C8724DF211B4D6800B4F27D /* ViewController.swift */,
+				5C8724D6211B45BF00B4F27D /* NetworkManager.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		5CC3FB2E2431904C001FC2E9 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				5C8724E1211B4DA400B4F27D /* ViewController.h */,
+				5C8724E2211B4DA400B4F27D /* ViewController.m */,
+				5C8724DC211B4C5800B4F27D /* NetworkManager.h */,
+				5C8724DD211B4C5800B4F27D /* NetworkManager.m */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		5CC3FB2F24319067001FC2E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				5C8724DB211B4C5800B4F27D /* Singleton-Bridging-Header.h */,
 				5C8724C8211B458F00B4F27D /* Main.storyboard */,
 				5C8724CB211B459000B4F27D /* Assets.xcassets */,
 				5C8724CD211B459000B4F27D /* LaunchScreen.storyboard */,
 				5C8724D0211B459000B4F27D /* Info.plist */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5C8724E4211B4F4E00B4F27D /* Objective-C */ = {
-			isa = PBXGroup;
-			children = (
-				5C8724DC211B4C5800B4F27D /* NetworkManager.h */,
-				5C8724DD211B4C5800B4F27D /* NetworkManager.m */,
-				5C8724E1211B4DA400B4F27D /* ViewController.h */,
-				5C8724E2211B4DA400B4F27D /* ViewController.m */,
-			);
-			name = "Objective-C";
-			sourceTree = "<group>";
-		};
-		5C8724E5211B4F5900B4F27D /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				5C8724D6211B45BF00B4F27D /* NetworkManager.swift */,
-				5C8724DF211B4D6800B4F27D /* ViewController.swift */,
-			);
-			name = Swift;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +137,7 @@
 				TargetAttributes = {
 					5C8724C0211B458F00B4F27D = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -330,16 +330,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HXC4UA9AV;
-				INFOPLIST_FILE = Singleton/Info.plist;
+				INFOPLIST_FILE = "Singleton/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lminhtm.Singleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Singleton/Singleton-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Singleton/Supporting Files/Singleton-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -351,15 +351,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HXC4UA9AV;
-				INFOPLIST_FILE = Singleton/Info.plist;
+				INFOPLIST_FILE = "Singleton/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lminhtm.Singleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Singleton/Singleton-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Singleton/Supporting Files/Singleton-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
